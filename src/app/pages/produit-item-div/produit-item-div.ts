@@ -1,10 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { Produit } from '../../models/produit.model';
 import { PRODUITS } from '../../data/produit.data';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-produit-item-div',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
+  standalone:true,
   templateUrl: './produit-item-div.html',
   styleUrl: './produit-item-div.scss',
 })

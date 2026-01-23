@@ -1,0 +1,38 @@
+
+
+<div>
+  <div class="page-titre">Ajout Nouveau produit</div>
+  <form [formGroup]="produitFrom">
+    <div class="form-element">
+      <span class="form-label">nom </span>
+      <input type="text" formControlName="nom">
+    </div>
+
+      <div class="form-element">
+        <span class="form-label">prix </span>
+        <input type="text" formControlName="prix">
+      </div>
+
+
+
+
+        <div class="form-element">
+          <span class="form-label">quantite </span>
+          <input type="text" formControlName="quantite">
+        </div>
+
+
+    <div class="form-element">
+      <span class="form-label">description </span>
+      <input type="text" formControlName="description">
+    </div>
+
+
+    <button class="bouton-valider" (click)="ajoutProduit()">Valider</button>
+
+
+
+
+
+  </form>
+</div>

@@ -6,6 +6,6 @@
     <span class="badge">{{ produit?.quantite }} en stock</span>
   </div>
   <div class="produit-item-column actions">
-     <button class="btn-edit">Modifier</button>
+     <button class="btn-edit" [routerLink]="['/produits',produit?.id]">Modifier</button>
   </div>
 </li>
